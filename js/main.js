@@ -45,7 +45,7 @@ function toonify(accent, sentence){
 	}
 }
 
-//round 4  a(var[]).reverse()
+//round 4  
 
 var origString = "Now I know what a TV dinner feels like"
 var space = " "
@@ -72,8 +72,22 @@ function letterReverse (string){
 	return stringReverse
 	//console.log(stringReverse);
 }
-	
 
+//both 4, 5 output into arrays, not understand how to loop in new string...I tried googling that not much help
+
+//6 
+arrayOfStrings = {string1 :["oh", "good", "grief"]}, 
+
+				  {string2: ["Nothing" , "takes", "the", 
+				 "taste", "out", "of", "peanut", 
+				 "butter", "quite", "like", 
+				 "unrequited", "love"]}
+
+function longest(arrayOfStrings){
+	for (var i = 0; i < arrayOfStrings.length; i++){
+		console.log(arrayOfStrings.string[i].length);
+	}
+}
 
 
 
