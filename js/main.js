@@ -33,7 +33,8 @@ transmogrifier(42, 13, 7)//14466001271480793000
 // 	}
 // }
 
-//^^first attempt 
+//^^first idea
+
 function toonify(accent, sentence){
 	if (accent === "daffy"){
 		return sentence.replace(new RegExp('s', 'g'),'th');
@@ -44,8 +45,34 @@ function toonify(accent, sentence){
 	}
 }
 
+//round 4  a(var[]).reverse()
+
+var origString = "Now I know what a TV dinner feels like"
+var space = " "
+var array = origString.split
+
+function wordReverse (string, separator){
+	var array = origString.split(separator);
+
+	console.log(origString);
+	console.log(array.reverse());
+}
+
+//If i run wordReverse(origString, space),
+//i get the statement in reverse unsure how to loop it through
+
+//round 5
+
+// var string = "Now I know what a TV dinner feels like"
+// var string2 = "Put Hans back on the line"
 
 
+function letterReverse (string){
+	var stringReverse = string.split('').reverse();
+	return stringReverse
+	//console.log(stringReverse);
+}
+	
 
 
 
