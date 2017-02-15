@@ -21,19 +21,7 @@ transmogrifier(42, 13, 7)//14466001271480793000
 
 //round 3
 
-// var looney = {
-// 		accent: ["daffy", "elmer", "porky"],
-// 		sentence: ["it's rabbit season", "be very very quiet im hunting rabbit", "that's all folks"]
-// }
-// if (looney.accent[0] + looney.sentence[0]) {
-// 		return(looney.sentence[0].replace(new RegExp('s', 'g'),'th'));
-// 	} else  if (looney.accent[1] + looney.sentence[1]) {
-// 		return(looney.sentence[1].replace(new RegExp('r', 'g'),'w'));
 
-// 	}
-// }
-
-//^^first idea
 
 function toonify(accent, sentence){
 	if (accent === "daffy"){
@@ -47,48 +35,66 @@ function toonify(accent, sentence){
 
 //round 4  
 
-var origString = "Now I know what a TV dinner feels like"
-var space = " "
-var array = origString.split
 
-function wordReverse (string, separator){
-	var array = origString.split(separator);
-
-	console.log(origString);
-	console.log(array.reverse());
+function wordReverse(str){
+	var splitString = str.split(" ");
+	var newString = splitString.reverse();
+	var rStr = ("");
+	for (i = 0; i < newString.length; i++){
+		rStr =(rStr + " " + newString[i]);
+	}
+	return rStr;
 }
 
-//If i run wordReverse(origString, space),
-//i get the statement in reverse unsure how to loop it through
 
 //round 5
 
-// var string = "Now I know what a TV dinner feels like"
-// var string2 = "Put Hans back on the line"
+//  "Now I know what a TV dinner feels like"
+//  "Put Hans back on the line"
 
 
 function letterReverse (string){
-	var stringReverse = string.split('').reverse();
-	return stringReverse
-	//console.log(stringReverse);
+	var strReverse = string.split(' ');
+	
+	var final = "";
+
+	for (i = 0 ; i < strReverse.length; i++){
+
+		final += " " + strReverse[i].split('').reverse().join('');
+	
+	}
+	return final;
 }
 
-//both 4, 5 output into arrays, not understand how to loop in new string...I tried googling that not much help
 
 //6 
-arrayOfStrings = {string1 :["oh", "good", "grief"]}, 
 
-				  {string2: ["Nothing" , "takes", "the", 
-				 "taste", "out", "of", "peanut", 
-				 "butter", "quite", "like", 
-				 "unrequited", "love"]}
+function longest(string){
+	// for (var i = 0; i < string.length; i++){
+	// 	console.log(string.string[i].length);
+var sortArray = string.sort(function(a,b){return b.length - a.length});
 
-function longest(arrayOfStrings){
-	for (var i = 0; i < arrayOfStrings.length; i++){
-		console.log(arrayOfStrings.string[i].length);
+return console.log(sortArray[0]);
 	}
+
+
+//7 
+
+
+
+function master(string){
+	console.log(string)
+
 }
 
+function repMaster(wordReverse, input){
+	wordReverse.call();
+	var input = 'oh yeah';
+	wordReverse(input)
+
+}
+
+repMaster(master);
 
 
 
